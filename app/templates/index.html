@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+    <main class="w-full flex-grow">
+        <section class="relative w-full h-[80vh] md:h-[90vh] overflow-hidden">
+            <!-- Video Container -->
+            <div class="absolute inset-0 w-full h-full">
+                <video 
+                    src="static/images/hero.mp4" 
+                    autoplay 
+                    muted 
+                    loop 
+                    playsinline 
+                    class="w-full h-full object-cover self-center"
+                ></video>
+            </div>
+            <div class="relative items-center justify-center lg:pl-70 pt-20 mx-auto flex-shrink ">
+                <p class=" text-white inline-block pl-18 text-wrap text-2xl md:text-2xl lg:text-5xl font-sans font-semibold lg:leading-16 
+                [text-shadow:_2px_2px_4px_rgb(0_0_0_/_60%)] 
+                hover:[text-shadow:_4px_4px_6px_rgb(0_0_0_/_100%)] 
+                transition-shadow ">
+                    Predict and <br> Prevent <br> Customer <br> Churn Before <br> It Happens.
+                </p>
+                <button class="
+                               px-6 py-3 
+                               bg-blue-500 hover:bg-blue-600 
+                                text-white font-semibold 
+                                rounded-lg 
+                               shadow-md 
+                               transition-all 
+                               duration-300 
+                                ease-in-out 
+                                hover:scale-105 
+                                hover:shadow-lg 
+                               focus:outline-none 
+                               focus:ring-2 
+                               focus:ring-blue-400 
+                                focus:ring-opacity-75 
+                                active:scale-95
+                                 transform
+                                flex-1/3
+                                ml-10
+                                drop-shadow-lg
+                                "
+                               >
+                     Get Started
+                </button>
+                
+            </div>
+        </section>
+        <section class="bg-linear-to-r from-cyan-150 to-blue-300">
+            <div class="container mx-auto px-4 py-12 max-w-6xl">
+                <!-- Header Section -->
+                <div class="text-center mb-16 ">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-blue-700 text-transparent bg-clip-text drop-shadow-md">
+                        Customer Churn Prediction Platform
+                    </h1>
+                    <p class=" text-lg md:text-xl max-w-3xl mx-auto bg-gradient-to-r from-blue-400 to-blue-700 text-transparent bg-clip-text drop-shadow-md">
+                        Leverage machine learning to identify at-risk customers and prevent revenue loss
+                    </p>
+                </div>
+        
+                <!-- Features Grid -->
+                <div class="grid md:shrink gap-8 mb-16">
+                    <!-- Feature Cards -->
+                    <div class="bg-white p-6 rounded-lg drop-shadow-lg grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-center justify-center md:justify-end order-1 md:order-2">
+                            <img src="static/images/People talking with managers in bank flat vector illustration 1.svg" alt="Italian Trulli" class="max-w-full h-auto">
+                        </div>
+                        <div class="flex flex-col text-justify md:text-lg sm:text-sm order-2 md:order-1">
+                            <p class="font-semibold">“Insights to help banks identify at-risk customers, reduce churn, and improve customer retention."</p>
+                            <h3 class="text-xl font-bold mb-3">Short Description</h3>
+                            <p class="text-gray-600">"Customer churn is a major challenge for banks, leading to revenue loss and declining customer trust. Our Churn Prediction Web App uses machine learning models (Random Forest + SVM) to analyze customer data and predict who is at risk of leaving. With real-time insights, you can take proactive steps to retain customers before it’s too late!"</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg drop-shadow-lg lg:text-lg  md:text-base sm:text-sm text-justify">
+                        <h3 class="text-xl font-bold mb-3">Key Features</h3>
+                        <p class="text-gray-600">✅ Real-Time Churn Prediction: Get instant insights into customer behavior.</p>
+                        <p class="text-gray-600">✅ Powered Analytics: Our machine learning model provides high-accuracy predictions.</p>
+                        <p class="text-gray-600">✅ Risk Segmentation: Identify high-risk, medium-risk, and low-risk customers.</p>
+                        <p class="text-gray-600">✅ Actionable Recommendations: Suggested strategies to prevent churn.</p>
+                        <p class="text-gray-600">✅ Data-Driven Decision Making: Visualize trends and take action before customers leave.</p>
+                    </div>  
+        </section>
+          
+    </main>
+{% endblock %}
